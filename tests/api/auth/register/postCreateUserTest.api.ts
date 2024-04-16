@@ -1,6 +1,6 @@
-import { FakerDataGenerator } from '../../../../main/generator/fakerDataGenerator';
 import { test, expect } from "@playwright/test";
 import Joi  from "joi";
+import { FakerDataGenerator } from '../../../../main/generator/fakerDataGenerator';
 
 test("Create user, post /auth/register", async ({request}) => {
 
