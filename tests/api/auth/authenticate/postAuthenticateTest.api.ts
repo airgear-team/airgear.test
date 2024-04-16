@@ -71,8 +71,6 @@ test("Validate json schema, post /auth/authenticate", async ({request}) => {
 
   expect(postGetAuthTokenResponse.status()).toBe(200);
 
-  //const responseData = await postGetAuthTokenResponse.json();
-
   Joi.assert(await postGetAuthTokenResponse.json(), schema);
 
 });
